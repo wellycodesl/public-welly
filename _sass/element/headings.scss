@@ -1,0 +1,29 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: $wellyFontFamilyHeading;
+	font-weight: 700;
+
+}
+
+h1 {
+	font-size: calc(var(--w-font-size-base) * #{$wellyH1Factor});
+}
+h2 {
+	font-size: calc(var(--w-font-size-base) * #{$wellyH2Factor});
+}
+h3 {
+	font-size: calc(var(--w-font-size-base) * #{$wellyH3Factor});
+}
+h4 {
+	font-size: calc(var(--w-font-size-base) * #{$wellyH4Factor});
+}
+h5 {
+	font-size: calc(var(--w-font-size-base) * #{$wellyH5Factor});
+}
+h6 {
+	font-size: calc(var(--w-font-size-base) * #{$wellyH6Factor});
+}

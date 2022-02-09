@@ -1,0 +1,25 @@
+{
+    "name": "welly-static-sites",
+    "version": "0.0.1",
+    "description": "Generador de sites estáticos, basado en jekyll",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/wellycodesl/welly-static-sites.git"
+      },
+      "keywords": [
+        "HTML",
+        "CSS",
+        "Javascript"
+      ],
+      "author": "Welly Code SL",
+      "license": "MIT",
+      "bugs": {
+        "url": "https://github.com/wellycodesl/welly-static-sites/issues"
+      },
+      "homepage": "https://github.com/wellycodesl/welly-static-sites#readme",
+    "scripts": {
+        "dev": "jekyll serve",
+        "build": "jekyll build",
+        "publish": "jekyll build && surge _site"
+    }
+}

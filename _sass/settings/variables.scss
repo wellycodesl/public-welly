@@ -1,0 +1,51 @@
+/* SCSS */
+// Font Size for all project
+$wellyFontBase: 16;
+
+// Rythm base project
+$wellyRhythmBase: 4;
+
+// Factor headings
+$wellyH1Factor:4;
+$wellyH2Factor:3;
+$wellyH3Factor:2;
+$wellyH4Factor:1.5;
+$wellyH5Factor:1;
+$wellyH6Factor:0.8;
+
+// Font Family projects
+$wellyFontFamily: -apple-system,BlinkMacSystemFont,segoe ui,Roboto,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
+
+$wellyFontFamilyHeading: -apple-system,BlinkMacSystemFont,segoe ui,Roboto,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;;
+
+// Colors
+$color__text: #1D1D1B;
+$color__white: #ffffff;
+$color__purple: #82368C;
+$color__purple_fosc: #5F1A68;
+$color__purple_item: #BF9AC4;
+$color__orange: #F56259;
+$color__orange_alpha: rgba(245, 98, 89, 0.13);
+$color__purple_alpha: rgba(191, 154, 196, 0.1);
+$color__grey2:  #F9F5F9;
+
+// Shadow
+$shadow__box:  0px 4px 4px rgba(0, 0, 0, 0.25);
+$shadow__button: 0px 1.82648px 1.82648px rgba(0, 0, 0, 0.25);
+
+
+$mediaQueries: (
+  mobile: (min-width: 320px),
+  tablet: (min-width: 768px),
+  desktop: (min-width: 1024px),
+  tv: (min-width: 1280px),
+  wide: (min-width: 1440px)
+);
+
+
+/* Custom properties */
+
+:root {
+	--w-font-size-base: #{$wellyFontBase}px;
+	--w-rhythm-base: #{$wellyRhythmBase}px;
+}

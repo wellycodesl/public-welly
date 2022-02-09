@@ -1,0 +1,1 @@
+console.log('Welly v1.0.0');
