@@ -1,0 +1,14 @@
+.wc-heading {
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 48px;
+	color: $color__black;
+	font-family: $wellyFontFamily;
+	font-weight: 300;
+	width: 22ch;
+	margin: 0 auto;
+	line-height: 1.5;
+	strong {
+		color: $color__orange
+	}
+}
