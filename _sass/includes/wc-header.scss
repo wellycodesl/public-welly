@@ -1,0 +1,112 @@
+.wc-header {
+	$buttonDimension: 48px;
+	position: relative;
+	z-index: 100;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 16px;
+	@media all and(min-width: $welly__tablet) {
+		padding: 16px 32px;
+	}
+	&__nav {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		@media all and(min-width: $welly__tablet){
+			max-width: 1480px;
+			justify-content: flex-start;
+		}
+	}
+	&__picture {
+		width: 200px;
+		@media all and(min-width: $welly__tablet) {
+			width: 350px;
+		}
+	}
+	&__list {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		position: fixed;
+		top: 0;
+		right: -100%;
+		bottom: 0;
+		width: 100%;
+		background-color: white;
+		transition: right .7s cubic-bezier(0.075, 0.82, 0.165, 1);
+		&[aria-hidden="false"]{
+			right: 0;
+		}
+		@media all and(min-width: $welly__tablet) {
+			display: flex;
+			position: relative;
+			top: auto;
+			right: auto;
+			bottom: auto;
+			background-color: transparent;
+			flex-direction: row;
+			justify-content: flex-end;
+		}
+
+		& > .wc-header__close {
+			width: 100%;
+			padding: 22px 16px 32px 32px;
+			display: flex;
+			flex-direction: row;
+			justify-content: right;
+			@media all and(min-width: $welly__tablet) {
+				display: none;
+			}
+		}
+	}
+	&__link {
+		padding: 18px;
+		position: relative;
+		color: $color__black;
+		font-size: 20px;
+		@media all and(min-width: $welly__tablet) {
+			color: $color__white;
+			text-align: center;
+		}
+		@media all and(min-width: $welly__tv) {
+			text-align: left;
+		}
+		&:hover,
+		&:focus {
+			outline: none;
+			text-decoration: none;
+			color: $color__orange;
+			&:before {
+				content: "";
+				position: absolute;
+				left: 0;
+				bottom: 0;
+				width: 100%;
+				border-bottom: 2px solid $color__orange;
+			}
+		}
+	}
+	&__trigger {
+		border-radius: 9999em;
+		background-color: white;
+		width: $buttonDimension;
+		height: $buttonDimension;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		@media all and(min-width: $welly__tablet) {
+			display: none;
+		}
+	}
+
+	&--light {
+		.wc-header{
+			&__link {
+				color: $color__white
+			}
+		}
+	}
+}

@@ -1,0 +1,50 @@
+.wc-about-info {
+
+	$widthLine: 300px;
+
+
+	font-size: 20px;
+	font-family: $wellyFontFamily;
+	display: flex;
+	flex-direction: row;
+	flex: 1;
+	flex-wrap: nowrap;
+
+	&__link {
+		display: flex;
+		align-items: center;
+		
+		text-transform: uppercase;
+		font-weight: bold;
+		color: $color__black;
+		&:hover, 
+		&:focus{
+			color: $color__orange;
+		}
+
+	}
+	&__text {
+		flex-basis: 50%;
+	}
+	&__isotopo {
+		flex-basis: 50%;
+		display: flex;
+		justify-content: flex-end;
+		align-items: flex-start;
+		padding-right: $widthLine;
+		position: relative;
+		&:after {
+			content: '';
+			width: $widthLine - 32px;
+			height: 1px;
+			border-top: 3px solid $color__orange;
+			position: absolute;
+			top: 17px;
+			right: 20px;
+		}
+		& img{
+			width: 50px;
+		}
+		
+	}
+}

@@ -1,1 +1,47 @@
 /* Bloque para indentificar las fuentes del proyecto */
+@font-face {
+	font-family: 'rubik';
+	src: url('/assets/fonts/rubik/rubik-regular.woff') format('woff');
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'rubik';
+	src: url('/assets/fonts/rubik/rubik-medium.woff') format('woff');
+	font-style: normal;
+	font-weight: 500;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'rubik';
+	src: url('/assets/fonts/rubik/rubik-light.woff') format('woff');
+	font-style: normal;
+	font-weight: 200;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'rubik';
+	src: url('/assets/fonts/rubik/rubik-bold.woff') format('woff');
+	font-style: normal;
+	font-weight: 700;
+	font-display: swap;
+}
+
+
+/* Bloque para indentificar las fuentes del proyecto */
+@font-face {
+	font-family: 'orbitron';
+	src: url('/assets/fonts/orbitron/orbitron-regular.woff') format('woff');
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'orbitron';
+	src: url('/assets/fonts/orbitron/orbitron-bold.woff') format('woff');
+	font-style: normal;
+	font-weight: 700;
+	font-display: swap;
+}

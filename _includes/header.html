@@ -1,6 +1,38 @@
-<header class="w-u__center">
-  <picture class="w-u__w50">
-    <img src="{{ "/assets/img/wellycode-negro.png" | relative_url }}" alt="Welly
-    Code SL">
-  </picture>
+{% if include.light %}
+{% assign light= 'wc-header--light'%}
+{% else %}
+{% assign light= ''%}
+{% endif %}
+
+<header class="wc-header {{light}}">
+	<nav class="wc-header__nav">
+		<a href="/">
+			<picture class="wc-header__picture">
+				{% if include.light %}
+				<img src="{{"/assets/img/wellycode-blanco-horizontal.png" | relative_url }}" alt=" Logo Welly
+	Code SL, ir a inicio ">
+				{% else %}
+				<img src="{{"/assets/img/wellycode-multicolor-horizontal.png" | relative_url }}" alt=" Logo Welly
+	Code SL, ir a inicio ">
+				{% endif %}
+			</picture>
+		</a>
+		<button type="button" class="wc-btn wc-header__trigger" data-welly-js="trigger__menu" aria-controls="main__menu"
+			aria-label="Abrir el menu mobile">
+			{% svg '/assets/icons/menu.svg'%}
+		</button>
+		<ul class="wc-header__list" id="main__menu" aria-hidden="true">
+			<li class="wc-header__close">
+				<button type="button" class="wc-btn wc-header__trigger" data-welly-js="trigger__menu"
+					aria-controls="main__menu" aria-label="Cerrar el menu mobile">
+					{% svg '/assets/icons/closed.svg'%}
+				</button>
+			</li>
+			<li> <a class="wc-header__link" href="/drones" target="_self"> Drones</a> </li>
+			<li> <a class="wc-header__link" href="/desarrollo-web" target="_self"> Desarrollo Web</a> </li>
+			<li> <a class="wc-header__link" href="/imagen-video" target="_self"> Imagen y Video</a> </li>
+			<li> <a class="wc-header__link" href="/imagen-corporativa" target="_self"> Imagen corporativa </a> </li>
+			<li> <a class="wc-header__link" href="/tomamos-un-café" target="_self"> Tomamos un café</a> </li>
+		</ul>
+	</nav>
 </header>
