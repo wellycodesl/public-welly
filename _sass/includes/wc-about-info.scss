@@ -1,19 +1,21 @@
 .wc-about-info {
-
-	$widthLine: 300px;
-
+	$widthLine: 250px;
+	$widthLineDesktop: 300px;
 
 	font-size: 20px;
 	font-family: $wellyFontFamily;
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
+	padding: 32px;
+	@media all and(min-width: $welly__tablet) {
+		flex-direction: row;
+	}
 	flex: 1;
 	flex-wrap: nowrap;
 
 	&__link {
 		display: flex;
 		align-items: center;
-		
 		text-transform: uppercase;
 		font-weight: bold;
 		color: $color__black;
@@ -21,7 +23,6 @@
 		&:focus{
 			color: $color__orange;
 		}
-
 	}
 	&__text {
 		flex-basis: 50%;
@@ -33,9 +34,16 @@
 		align-items: flex-start;
 		padding-right: $widthLine;
 		position: relative;
+		@media all and(min-width: $welly__tablet) {
+			padding-right: $widthLineDesktop;
+		}
+		
 		&:after {
 			content: '';
 			width: $widthLine - 32px;
+			@media all and(min-width: $welly__tablet) {
+				width: $widthLineDesktop - 32px;
+			}
 			height: 1px;
 			border-top: 3px solid $color__orange;
 			position: absolute;
