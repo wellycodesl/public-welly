@@ -1,13 +1,19 @@
 .wc-heading {
 	text-transform: uppercase;
 	text-align: center;
-	font-size: 48px;
+	font-size: 36px;
 	color: $color__black;
 	font-family: $wellyFontFamily;
 	font-weight: 300;
-	width: 22ch;
+	width: 100%;
 	margin: 0 auto;
 	line-height: 1.5;
+	margin-bottom: 24px;
+	padding: 0 24px;
+	@media all and(min-width: $welly__tablet) {
+		font-size: 48px;
+		width: 22ch;
+	}
 	strong {
 		color: $color__orange
 	}

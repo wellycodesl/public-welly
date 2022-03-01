@@ -1,0 +1,52 @@
+.wc-card-client{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	@media all and(min-width: $welly__tv) {
+		flex-direction: row;
+	}
+	> li {
+		flex: 1;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 45px 16px;
+		@media all and(min-width: $welly__desktop){
+			flex-direction: row;
+			padding: 90px 32px;
+		}
+	}
+	> li:first-child {
+		background-color: $color__blue;
+		justify-content: flex-end;
+	}
+
+	> li:last-child {
+		background-color: $color__sepia;
+		justify-content: flex-start;
+	}
+	&__name {
+		
+		font-family: $wellyFontFamily;
+		font-size: 36px;
+		font-weight: bold;
+		width: 100%;
+		margin: 0 auto;
+		@media all and(min-width: $welly__desktop) {
+			width: 220px;
+			flex-basis: 10ch;
+		}
+		&:after{
+			content: '';
+			display: block;
+			width: 32px;
+			height: 1px;
+			border-top: 3px solid $color__orange;
+		} 	
+	}
+
+	&__media {
+		width: 330px;
+	}
+}

@@ -10,7 +10,21 @@ page-type: website
 <main>
 	<h1></h1>
 	{% include about-info.html %}
-	<section>
+	<section class="wc-section">
 		{% include heading.html title="Trabajos de los que nos" strong="sentimos orgullosos" %}
+
+		<ul class="wc-card-client">
+			<li>
+				<p class="wc-card-client__name">Alia Fisioterapia</p>
+				<img class="wc-card-client__media" src="{{'/assets/img/mockups/mockup-alia-fisioterapia.png'}}" alt="Mockup de Alia">
+			</li>
+			<li>
+				<p class="wc-card-client__name">SepsaMedha</p>
+				<img class="wc-card-client__media" src="{{'/assets/img/mockups/mockup-sepsaMedha.png'}}" alt="Mockup de Sepsa">
+			</li>
+		</ul>
+	</section>
+	<section>
+		{% include heading.html title="Clientes de los que nos" strong="sentimos orgullosos" %}
 	</section>
 </main>
