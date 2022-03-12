@@ -17,4 +17,12 @@
 	strong {
 		color: $color__orange
 	}
+
+	&--light {
+		width: 100%;
+		text-align: left;
+		strong {
+			font-weight: 300;
+		}
+	}
 }

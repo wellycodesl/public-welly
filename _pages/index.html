@@ -16,15 +16,84 @@ page-type: website
 		<ul class="wc-card-client">
 			<li>
 				<p class="wc-card-client__name">Alia Fisioterapia</p>
-				<img class="wc-card-client__media" src="{{'/assets/img/mockups/mockup-alia-fisioterapia.png'}}" alt="Mockup de Alia">
+				<img class="wc-card-client__media" src="{{'/assets/img/mockups/mockup-alia-fisioterapia.png'}}"
+					alt="Mockup de Alia">
 			</li>
 			<li>
 				<p class="wc-card-client__name">SepsaMedha</p>
-				<img class="wc-card-client__media" src="{{'/assets/img/mockups/mockup-sepsaMedha.png'}}" alt="Mockup de Sepsa">
+				<img class="wc-card-client__media" src="{{'/assets/img/mockups/mockup-sepsaMedha.png'}}"
+					alt="Mockup de Sepsa">
 			</li>
 		</ul>
 	</section>
-	<section>
+	<section class="wc-section wc-section--bb">
 		{% include heading.html title="Clientes de los que nos" strong="sentimos orgullosos" %}
+		{% include carousel-home.html %}
+	</section>
+	<section class="wc-section">
+
+		<ul class="wc-do-better">
+			<li>{% include heading.html title="Qué hacemos" strong="mejor" customClass="wc-heading--light" %}</li>
+			<li>
+				<a class="wc-do-better__link" href="">
+					{% svg '/assets/icons/dron.svg' %}
+					<h3 class="wc-do-better__title">Drones</h3>
+					<p class="wc-do-better__text">El arte en movimiento, una imagen vale más que mil palabras… ¿cuánto
+						vale una imagen en movimiento? Contar una historia, mostrar la belleza de lo que nos rodea, dar
+						valor a una marca, en Welly Code somos profesionales con muchos años de experiencia en el sector
+						audiovisual y especialistas en grabación aérea con drones, tus imágenes en 4K también desde el
+						cielo, ponte en las mejores manos para contar tu historia.</p>
+				</a>
+			</li>
+			<li>
+				<a class="wc-do-better__link" href="">
+					{% svg '/assets/icons/html5.svg' %}
+					{% svg '/assets/icons/css3.svg' %}
+					{% svg '/assets/icons/javascript.svg' %}
+					<h3 class="wc-do-better__title">Desarrollo web</h3>
+					<p class="wc-do-better__text">Creamos sitios web únicos, basados ​​en las tecnologías más
+						actualizadas.
+						Nuestro equipo toma en consideración los problemas de su negocio y proporciona soluciones
+						sistemáticas, razonadas y comprobadas.</p>
+				</a>
+			</li>
+			<li>
+				<a class="wc-do-better__link" href="">
+					{% svg '/assets/icons/photo.svg' %}
+					{% svg '/assets/icons/sound.svg' %}
+					<h3 class="wc-do-better__title">Imagen y sonido</h3>
+					<p class="wc-do-better__text">Creamos sitios web únicos, basados ​​en las tecnologías más
+						actualizadas.
+						Nuestro equipo toma en consideración los problemas de su negocio y proporciona soluciones
+						sistemáticas, razonadas y comprobadas.</p>
+				</a>
+			</li>
+			<li><a class="wc-do-better__link" href="">
+
+
+					{% svg '/assets/icons/brush.svg' %}
+					{% svg '/assets/icons/artboard.svg' %}
+					<h3 class="wc-do-better__title">Diseño Web</h3>
+					<p class="wc-do-better__text">Todo negocio exitoso debe tener una identidad de marca y una
+						comunicación
+						memorables y únicas. Valoramos la calidad y la atención al detalle por encima de la cantidad y
+						proporcionamos soluciones de diseño bien consideradas y basadas en ideas.</p>
+				</a>
+			</li>
+			<li><a class="wc-do-better__link" href="">
+
+
+					{% svg '/assets/icons/google.svg' %}
+					{% svg '/assets/icons/list-search.svg' %}
+					<h3 class="wc-do-better__title">SEO</h3>
+					<p class="wc-do-better__text">Creamos sitios web únicos, basados ​​en las tecnologías más
+						actualizadas.
+						Nuestro equipo toma en consideración los problemas de su negocio y proporciona soluciones
+						sistemáticas, razonadas y comprobadas.</p>
+				</a>
+			</li>
+		</ul>
+
+
 	</section>
 </main>
