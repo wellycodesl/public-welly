@@ -8,14 +8,29 @@
 		font-family: $wellyFontFamily;
 		color: $color__white;
 		text-align: center;
-		margin-bottom: 75px;
+		margin-bottom: 24px;
+		@media all and(min-width: $welly__tablet){
+			margin-bottom: 75px;
+		}
 	}
 	&__media {
 		position: absolute;
 		top: 0;
 		left: 0;
+		right: 0;
+		bottom: 0;
 		z-index: -1;
+		overflow: hidden;
+		img {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			height: 100%;
+			width: auto;
+			z-index: -1;
 
+		}
 		&:before {
 			content: "";
 			display: block;
@@ -35,6 +50,7 @@
 		font-weight: 500;
 		flex: 1;
 		margin-bottom: 32px;
+		width: 100%;
 		& input,
 		textarea {
 			background-color: transparent;
@@ -67,6 +83,10 @@
 		cursor: pointer;
 		color: $color__white;
 		font-weight: 500;
+		font-size: 16px;
+		@media all and(min-width: $welly__tablet){
+			font-size: 18px;
+		}
 		a {
 			color: $color__white;
 			text-decoration: underline;
@@ -104,14 +124,22 @@
 	}
 	&--3columns {
 		display: flex;
-		flex-direction: row;
+		flex-direction: column;
 		flex-wrap: nowrap;
 		align-content: center;
 		justify-content: space-around;
 		align-items: center;
-		gap: 48px;
+		
+		@media all and(min-width: $welly__tablet) {
+			flex-direction: row;
+			gap: 48px;
+		}
 	}
 	&--home {
-		padding: 100px 80px;
+		padding: 16px;
+		@media all and(min-width: $welly__tablet){
+			padding: 100px 80px;
+		}
+		
 	}
 }

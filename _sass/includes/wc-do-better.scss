@@ -1,18 +1,32 @@
 .wc-do-better {
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	align-items: flex-end;
 	justify-content: center;
 	flex-wrap: wrap;
 	gap: 16px;
-	padding-top: 80px;
+	@media all and(min-width: $welly__tablet) {
+		padding-top: 80px;
+		flex-direction: row;
+	}
 	& li {
-		padding: 32px 16px;
-		width: 30%;
+		padding: 16px;
 		align-self: flex-start;
+		@media all and(min-width: $welly__tablet) {
+			width: 30%;
+			padding-top: 16px;
+			padding-bottom: 16px;
+		}
 	}
 	& li:first-child {
-		padding: 0 64px 0 0;
+		padding: 0 16px;
+		@media all and(min-width: $welly__tablet) {
+			padding: 0 64px 0 0;
+		}
+		h2 {
+			padding: 0;
+			margin: 0;
+		}
 	}
 	&__title {
 		width: 80%;
