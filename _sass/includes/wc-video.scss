@@ -1,9 +1,29 @@
 .wc-video {
-	position: absolute;
-	top: 0;
-	left: 0;
 	width: 100%;
-	& video {
-		position: relative;
+	overflow: hidden;
+	position: relative;
+	video {
+		width: 100%;
+	}
+	&__heading {
+		position: absolute;
+		top: 50%;
+		left: 16px;
+		transform: translateY(-50%);
+		font-size: 32px;
+		@media all and(min-width: $welly__tablet) {
+			left: 100px;
+			font-size: 48px;
+		}
+	}
+	&__pro{
+		color: $color__white;
+		display: block;
+		font-weight: bold;
+	}
+	&__exp{
+		color: $color__orange;
+		display: block;
+		font-weight: bold;
 	}
 }
