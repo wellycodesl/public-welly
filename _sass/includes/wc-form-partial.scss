@@ -1,0 +1,117 @@
+.wc-form {
+	position: relative;
+	min-height: 550px;
+	overflow: hidden;
+	&__legend {
+		font-size: 48px;
+		font-weight: bold;
+		font-family: $wellyFontFamily;
+		color: $color__white;
+		text-align: center;
+		margin-bottom: 75px;
+	}
+	&__media {
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: -1;
+
+		&:before {
+			content: "";
+			display: block;
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			background-color: rgba(244, 129, 19, 0.4);
+		}
+	}
+	&__field {
+		color: $color__white;
+		font-size: 18px;
+		text-transform: uppercase;
+		font-family: $wellyFontFamily;
+		font-weight: 500;
+		flex: 1;
+		margin-bottom: 32px;
+		& input,
+		textarea {
+			background-color: transparent;
+			border: none;
+			border-bottom: 2px solid $color__white;
+			padding: 4px 0 12px 0;
+			resize: none;
+			color: $color__white;
+			position: relative;
+			width: 100%;
+			&::placeholder {
+				color: $color__white;
+				font-size: 18px;
+				text-transform: uppercase;
+				font-weight: 500;
+			}
+		}
+	}
+	&__fieldset {
+		margin-bottom: 16px;
+		z-index: 10;
+	}
+	&__check {
+		display: inline-flex;
+		flex-direction: row;
+		align-content: center;
+		align-items: center;
+		justify-content: flex-start;
+		gap: 6px;
+		cursor: pointer;
+		color: $color__white;
+		font-weight: 500;
+		a {
+			color: $color__white;
+			text-decoration: underline;
+			font-weight: 500;
+		}
+
+		&:before {
+			content: "";
+			display: inline-block;
+			width: 18px;
+			height: 18px;
+			border: 1px solid $color__white;
+			border-radius: 2px;
+		}
+	}
+	&__check-input {
+		&:checked + .wc-form__check:before {
+			background-color: $color__orange;
+			border-color: $color__orange;
+		}
+		&:focus + .wc-form__check{
+			outline: 2px solid $color__white;
+			outline-offset: 1ch;
+		}
+	}
+	&__submit {
+		font-size: 18px;
+		font-weight: 500;
+		color: $color__white;
+		text-transform: uppercase;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		gap: 8px;
+	}
+	&--3columns {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		align-content: center;
+		justify-content: space-around;
+		align-items: center;
+		gap: 48px;
+	}
+	&--home {
+		padding: 100px 80px;
+	}
+}

@@ -1,0 +1,43 @@
+<form class="wc-form wc-form--home" method="" id="form_home">
+	<picture class="wc-form__media">
+		<img loading="lazy" src="{{'/assets/img/fondos/mountain.jpeg' | relative_url }}" alt="">
+	</picture>
+	<fieldset class="wc-form__fieldset">
+		<legend class="wc-form__legend">¿Hablamos?</legend>
+		<div class="wc-form--3columns">
+			<label class="wc-form__field">
+				<input name="name" type="text" placeholder="tu nombre" required>
+				<span class="wc-u--hide-accessibility wc-form__text">Tu nombre</span>
+			</label>
+			<label class="wc-form__field">
+				<input name="email" type="email" placeholder="e-mail" required>
+				<span class="wc-u--hide-accessibility wc-form__text">e-mail</span>
+			</label>
+			<label class="wc-form__field">
+				<input name="phone" type="text" placeholder="teléfono" required>
+				<span class="wc-u--hide-accessibility wc-form__text">Teléfono</span>
+			</label>
+		</div>
+		<label class="wc-form__field">
+			<textarea name="description" cols="10" rows="1" placeholder="Descripción del proyecto" required></textarea>
+			<span class="wc-u--hide-accessibility wc-form__text">Descripción del proyecto</span>
+		</label>
+	</fieldset>
+	<fieldset class="wc-form__fieldset">
+		<legend class="wc-u--hide-accessibility">Política de privacida</legend>
+		<input id="policy" type="checkbox" name="policy" class="wc-form__check-input" required>
+		<label for="policy" class="wc-form__check">
+			Acepto la <a href="#">política de privacidad</a>
+		</label>
+		
+	</fieldset>
+	<button class="wc-form__submit">
+		Enviar
+		{% svg '/assets/icons/arrow-left-orange.svg' %}
+	</button>
+		
+	
+
+	
+	
+</form>
