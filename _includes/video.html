@@ -1,13 +1,14 @@
 <div class="wc-video">
-	<video autoplay loop muted>
-		<source src={{"/assets/video/volveremos-a-volar.mp4"}} type="video/mp4">
-		Sorry, your browser doesn't support embedded videos.
-	</video>
-	<!-- <img src="{{'/assets/img/drones/drones.jpeg' | relative_url }}" alt=""> -->
-	<h1 class="wc-video__heading">
-		<span class="wc-u--hide-accessibility">Welly Code</span>
-		<span class="wc-video__pro">Professional</span> 
-		<span class="wc-video__exp">eXperience</span>
-		<span class="wc-u--hide-accessibility">. Tus profesionales digitales</span>
+
+	{% if include.video %}
+		<video autoplay loop muted playsinline>
+			<source src={{"/assets/video/volveremos-a-volar.mp4" | relative__url }} type="video/mp4" poster="{{'/assets/img/dev-web/old-web-5.jpeg' | relative__url}}" />
+			Sorry, your browser doesn't support embedded videos.
+		</video>
+	{% else %}
+		<img src="{{ include.imgSRC | relative_url }}" alt="">
+	{% endif%}
+	<h1 class="wc-video__heading {{include.position}}">
+		{{include.h1}}
 	</h1>
 </div>

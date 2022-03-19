@@ -1,20 +1,25 @@
 .wc-location {
-	padding: 60px;
+	padding: 24px;
 	display: flex;
 	flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
     align-content: center;
+	gap: 16px;
 	@media all and(min-width: $welly__tablet) {
 		flex-direction: row;
+		padding: 60px;
 	}
 
 	&__address {
 		text-align: center;
 	}
 	&__city {
-		font-size: 24px;
+		font-size: 20px;
 		font-weight: 500;
+		@media all and(min-width: $welly__tablet) {
+			font-size: 24px;
+		}
 	}
 	&__text {
 		font-size: 20px;

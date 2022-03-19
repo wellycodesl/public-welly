@@ -19,8 +19,8 @@
 # in the templates via {{ site.myvariable }}.
 
 sitename: Welly Code SL
-title: Site generate for Welly Code SL
-description:  Generador de sitios estáticos para desarrollar proyectos de una forma ágil y rápida
+title: Professional eXperience
+description:  Ayudamos a crear experiencias digitales. Caminamos a tu lado para llegar al éxito
 livereload: true
 defaultimage: /default.jpg
 lang: es-ES

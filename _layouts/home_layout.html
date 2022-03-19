@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: " en-US" }}">
+<html lang="{{ site.lang | default: " es-ES" }}">
 
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,13 +7,16 @@
 	<title>{{ page.title }} - {{ site.title }}</title>
 	<link rel="stylesheet" href="{{"/assets/css/styles.css" | relative_url }}">
 	<script src="{{"/assets/js/welly-main.js" | relative_url }}"></script>
+	<link rel="shortcut icon" href="{{ "/favicon.png" | prepend: site.baseurl | prepend: site.url }}" />
 </head>
 
 <body>
 	{% include header.html %}
-	{{ content }}
-	{% include form-partial.html %}
-	{% include location.html %}
+	<main id="main-content">
+		{{ content }}
+		{% include form-partial.html %}
+		{% include location.html %}
+	</main>
 	{% include footer.html %}
 </body>
 
