@@ -10,13 +10,14 @@
 	<link rel="shortcut icon" href="{{ "/favicon.png" | prepend: site.baseurl | prepend: site.url }}" />
 </head>
 
-<body>
+<body id="top">
 	{% include header.html %}
 	<main id="main-content" class="wc-wrapper">
 		{{ content }}
 		{% include location.html %}
 	</main>
 	{% include footer.html %}
+	{% include gotop.html %}
 </body>
 
 </html>

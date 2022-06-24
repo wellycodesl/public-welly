@@ -35,9 +35,19 @@ const insertCurrentYear = ({blockElement})=>{
     })
 }
 
+const goToMain = () => {
+    const link = document.querySelector('[data-link-goto]')
+    const main = document.querySelector('#top');
+    link.addEventListener('click', (event)=> {
+        event.preventDefault();
+        main.scrollIntoView({behavior: 'smooth'});
+    })
+} 
 
-window.addEventListener('load', () => {
+const init = ()=> {
+    goToMain()
     menuMoblie('[data-welly-js="trigger__menu"]', '#main__menu');
     insertCurrentYear({blockElement: '[data-date-year]'})
-    
-}) 
+}
+
+window.addEventListener('load', init) 

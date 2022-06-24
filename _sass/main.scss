@@ -1,10 +1,38 @@
 // Import config files
 
-@import 'settings/index';
-@import 'mixins/mixinPixelToRem';
-@import 'generic/index';
-@import 'element/index';
-@import 'includes/index';
-@import 'utils/index';
+@import "settings/index";
+@import "mixins/mixinPixelToRem";
+@import "generic/index";
+@import "element/index";
+@import "includes/index";
+@import "utils/index";
 
 // Do Something
+.icon {
+	svg {
+		width: 42px ;
+		height: 42px;
+		fill: $color__orange;
+	}
+	&--up {
+		position: absolute;
+		top: 54%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	
+}
+
+.up {
+	display: block;
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	background-color: $color__white;
+	width: 50px;
+	height: 50px;
+	border: 2px solid $color__orange;
+	border-radius: 50%;
+	z-index: 900;
+}
