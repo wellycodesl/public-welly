@@ -1,11 +1,11 @@
 console.log('Welly v1.0.0');
 
 const menuMoblie = (trigger, menu) => {
-    console.log('menuMobile');
+    // console.log('menuMobile');
     const btnTrigger = document.querySelectorAll(trigger);
     const contentMenu = document.querySelector(menu);
 
-    console.log({ btnTrigger, contentMenu });
+    // console.log({ btnTrigger, contentMenu });
 
     const toggleMenu = () => {
         const state = contentMenu.getAttribute('aria-hidden');
