@@ -2,16 +2,22 @@
 	background-color: $color__orange;
 	padding-top: 20px;
 	padding-bottom: 20px;
-	display: flex;
-	
-	justify-content: center;
-	gap: 8px;
-	align-items: center;
-	color: white;
-	flex-direction: column;
-	@media all and(min-width: $welly__tablet) {
-		flex-direction: row;
+
+	&__list {
+		display: flex;
+		justify-content: center;
+		gap: 8px;
+		align-items: center;
+		color: white;
+		flex-direction: column;
+		@media all and(min-width: $welly__tablet) {
+			flex-direction: row;
+		}
 	}
+	&__link {
+		color: $color__white
+	}
+
 	img {
 		width: 140px;
 	}

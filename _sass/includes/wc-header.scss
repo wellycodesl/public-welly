@@ -6,7 +6,7 @@
 	flex-direction: row;
 	justify-content: space-between;
 	padding: 16px;
-	@media all and(min-width: $welly__tablet) {
+	@media all and(min-width: $welly__desktop) {
 		padding: 16px 32px;
 	}
 	&__nav {
