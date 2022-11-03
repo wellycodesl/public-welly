@@ -22,6 +22,17 @@
 			right: 32px;
 		}
 	}
+	&__logos {
+		width: 150px;
+	}
+	&__info {
+		margin-top: 24px;
+		display: flex;
+		flex-direction: column;
+	}
+	&__info-text{
+		font-size: 38px;
+	}
 	&--block {
 		display: block;
 		font-weight: bold;
