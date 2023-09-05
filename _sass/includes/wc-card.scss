@@ -1,0 +1,39 @@
+.wc-card {
+	&__content {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: flex-start;
+		justify-content: center;
+		gap: 32px;
+	}
+
+	&__box {
+		max-width: 500px;
+		border-radius: 12px;
+		padding: 16px;
+		box-shadow: 0px 0px 17px 0px rgba(0, 0, 0, 0.1),
+			0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+	}
+	&__category {
+		display: block;
+		text-align: right;
+		font-weight: bold;
+		font-style: italic;
+	}
+	&__align-center {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+		svg {
+			width: 30px;
+		}
+	}
+}
+
+@media all and (max-width: 1024px) {
+	.wc-card {
+		&__box h2 {
+			font-size: 32px;
+		}
+	}
+}
